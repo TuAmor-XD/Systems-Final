@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Belize Public Holidays 2026</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script type="module" src="js/main.js"></script>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- HERO HEADER -->
+    <header class="hero">
+      <div class="hero-badge">
+        <span class="dot"></span>
+        <span>Live Data</span>
+      </div>
+      <h1>Belize Public Holidays</h1>
+      <p>Official public &amp; bank holidays for 2026 · Holidays Act, Chapter 289</p>
+    </header>
+
+    <!-- STATUS CARDS ROW -->
+    <div class="status-row">
+      <!-- Today Status Card -->
+      <section class="status-card today-card" aria-label="Today holiday status">
+        <div class="status-label">
+          <span class="icon" data-role="today-icon">📅</span>
+          <span>Today</span>
+        </div>
+        <div class="status-value" data-role="today-title">Checking…</div>
+        <div class="status-detail" data-role="today-msg"></div>
+        <span class="badge" data-role="today-badge"></span>
+      </section>
+
+      <!-- Next Holiday Card -->
+      <section class="status-card next-card" aria-label="Next upcoming holiday">
+        <div class="status-label">
+          <span class="icon">🚀</span>
+          <span>Next Holiday</span>
+        </div>
+        <div class="status-value" data-role="next-occasion">—</div>
+        <div class="status-detail" data-role="next-date">—</div>
+      </section>
+    </div>
+
+    <!-- NAVIGATION TABS -->
+    <nav class="nav-tabs" aria-label="Holiday views">
+      <button class="nav-tab active" data-role="tab" data-panel="this-month">This Month</button>
+      <button class="nav-tab"        data-role="tab" data-panel="next-month">Next Month</button>
+      <button class="nav-tab"        data-role="tab" data-panel="all-year">Full Year</button>
+      <button class="nav-tab"        data-role="tab" data-panel="occasions">Occasions</button>
+      <button class="nav-tab"        data-role="tab" data-panel="dates">Dates</button>
+      <button class="nav-tab"        data-role="tab" data-panel="days">Days</button>
+    </nav>
+
+    <!-- HOLIDAY GRID PANELS -->
+    <section class="panel active" id="this-month" data-role="panel" aria-label="Holidays this month">
+      <div class="panel-header">
+        <h3 class="panel-title">Holidays This Month</h3>
+        <span class="panel-count" data-role="count-this-month"></span>
+      </div>
+      <div class="holiday-grid" data-role="grid-this-month"></div>
+    </section>
+
+    <section class="panel" id="next-month" data-role="panel" aria-label="Holidays next month">
+      <div class="panel-header">
+        <h3 class="panel-title">Holidays Next Month</h3>
+        <span class="panel-count" data-role="count-next-month"></span>
+      </div>
+      <div class="holiday-grid" data-role="grid-next-month"></div>
+    </section>
+
+    <section class="panel" id="all-year" data-role="panel" aria-label="All holidays 2026">
+      <div class="panel-header">
+        <h3 class="panel-title">All Holidays 2026</h3>
+        <span class="panel-count" data-role="count-all-year"></span>
+      </div>
+      <div class="holiday-grid" data-role="grid-all-year"></div>
+    </section>
+
+    <!-- LIST PANELS -->
+    <section class="panel" id="occasions" data-role="panel" aria-label="All occasions">
+      <div class="panel-header">
+        <h3 class="panel-title">All Occasions</h3>
+        <span class="panel-count" data-role="count-occasions"></span>
+      </div>
+      <ol class="simple-list" data-role="list-occasions"></ol>
+    </section>
+
+    <section class="panel" id="dates" data-role="panel" aria-label="All dates">
+      <div class="panel-header">
+        <h3 class="panel-title">All Dates</h3>
+        <span class="panel-count" data-role="count-dates"></span>
+      </div>
+      <ol class="simple-list" data-role="list-dates"></ol>
+    </section>
+
+    <section class="panel" id="days" data-role="panel" aria-label="All days">
+      <div class="panel-header">
+        <h3 class="panel-title">All Days</h3>
+        <span class="panel-count" data-role="count-days"></span>
+      </div>
+      <ol class="simple-list" data-role="list-days"></ol>
+    </section>
+
+  </div>
+
+  <footer class="app-footer">
+    <span>CMPS22242 · University of Belize · Holidays API 2026</span>
+    <span>Built with Go &amp; PostgreSQL</span>
+  </footer>
+
+</body>
+</html>
